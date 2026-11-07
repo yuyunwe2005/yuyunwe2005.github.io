@@ -1,8 +1,8 @@
 /* universal selector */
-*{
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 /* tag selector */
 h1{
     color: red;
@@ -210,4 +210,50 @@ ul li:nth-child(4){
     grid-column:1;
     grid-row-start: 1;
     grid-row-end:3 ;
+}
+
+/* Flex */
+ .flex{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around; 
+} 
+.flex div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* position relative */
+.parent_relative{
+border: 1px solid red;
+width: 1000px;
+height: 500px;
+}
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.parent_absolute{
+   border: 1px solid red;
+width: 1000px;
+height: 500px; 
+position: relative;
+}
+.absolute{
+    border: 1px solid blue;
+    width: 500px;
+    height: 200px;
+position: absolute;
+top: 100px;
+right: 100px;}
+
+.fixed1{
+    position: fixed;
+    top: 50px;
+    right: 60px;
 }
