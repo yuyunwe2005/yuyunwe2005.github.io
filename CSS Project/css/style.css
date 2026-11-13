@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: one;
+    src: url(../fonts/Playfair/Playfair-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+}
+/* start nav  */
+.nav_logo{
+    width: 140px;
+    height: 100px;
+}
+ .navbar{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    box-shadow:  0px 0px 10px rgb(0,0,0,0.2 );
+    height: 100px;
+} 
+.navbar ul {
+    display: flex;
+    margin-left: 160px;
+}
+.navbar ul li{
+list-style-type: none;
+margin-left: 80px;
+}
+.icon{
+    margin-left: 80px;
+    font-size: 20px;
+}
+.navbar a{
+    font-family: one;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+}
+/* End nav  */
+
+/* Start bunner  */
+.bunner{
+    background-image: url(../images/bunner3.avif);
+    height: 90vh;
+    background-size: cover;
+}
+.bunner_text{
+    font-family: one;
+    margin-left: 100px;
+    padding-top: 100px;
+    color: #ffffff;
+}
+
+
+/* End bunner  */
+
+/* Start products */
+.product{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    font-family: one;
+}
+.product_hr{
+    display: inline-block;
+    background-color:palevioletred;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+}
+.product_cards{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    margin-top: 40px ;
+}
+.product_title{
+    position: relative;
+    top: -100px;
+    opacity: 0;
+}
+.product_card:hover .product_title{
+    opacity: 1;
+    color: #ffffff;
+}
+.product_card img{
+    width: 200px;
+    height: 200px;
+   border-radius: 5px;
+}
+.product_card :hover img{
+filter: brightness(50%);
+}
+/* End Products  */
+/* Start About us  */
+.choose{
+    background-color:#fff5f5;
+    padding-bottom: 30px;
+}
+.choose_hr{
+    display: inline-block;
+    background-color:palevioletred;
+    width: 100px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 150px; 
+}
+.choose h1{
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-left: 100px;
+    font-family: one;
+}
+.choose_cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.choose_cards h2{
+    padding:20px 100px 20px;
+    
+}
+.choose_cards p{
+    font-size: 18px;
+    
+}
+.ch_p{
+    margin-left: 100PX;
+}
+.ch_img{
+    width: 400px;
+    height: 370px;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+.choose_card{
+    display: inline-block;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+   border-radius: 5px;
+
+}
+
+.choose_card i{
+    width: 400px;
+    height: 20px;
+    font-size: 30px;
+    color: #d77b91;
+}
+.choose_card h3{
+    padding-left: 80px;
+}
+.choose_card p{
+  padding-left: 80px;  
+}
+/* End About us  */
+
+/* Start best selling cake */
+.best{
+    margin-top: 40px;
+    font-family: one;
+}
+.best h1{
+    text-align: center;
+}
+.best_hr{
+    background-color:palevioletred;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+     margin-top: 10px;
+}
+
+.best_img1{
+    width: 100px;
+    height: 90px;
+    border-radius: 50px;
+    
+}
+.best_sell1{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: aqua;
+}
+/* End best selling cake  */
