@@ -159,10 +159,11 @@ filter: brightness(50%);
 /* Start best selling cake */
 .best{
     margin-top: 40px;
-    font-family: one;
+    /* font-family: one; */
 }
 .best h1{
     text-align: center;
+    font-family: one;
 }
 .best_hr{
     background-color:palevioletred;
@@ -172,16 +173,147 @@ filter: brightness(50%);
      margin-top: 10px;
 }
 
-.best_img1{
-    width: 100px;
-    height: 90px;
-    border-radius: 50px;
+.seller_img1 img{
+width:200px;
+height:200px;
+border-radius:10px ;
+margin-left:10px ;
+}
+.sell_card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+}
+/* End Best selling  */
+
+
+/* Start Contact us  */
+.contact{
+    background-color:palegoldenrod;
+    padding-bottom: 40px;
     
 }
-.best_sell1{
-    width: 400px;
-    height: 200px;
-    border: 1px solid #000;
-    background-color: aqua;
+
+
+.contact h1{
+    font-family: one;
+    text-align: center;
+    padding-top: 40px;
+    
 }
-/* End best selling cake  */
+.contact_hr{
+    background-color:palevioletred;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+     margin-top: 10px;
+}
+
+.contact_cards{
+   display: flex;
+}
+.contact_input{
+    margin-left:400px;
+    margin-top: 100px;
+
+}
+
+.contact_card{
+    margin-top: 100px;
+    margin-left:50px;
+}
+.contact_card p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.contact_card i{
+    color: #d77b91;
+}
+.input{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #d77b91;
+    border-radius: 10px;
+}
+#userMessage{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 80px;
+    border: 1px solid #d77b91;
+    border-radius: 10px;
+}
+button{
+    color: #ffffff;
+    width: 100px;
+    padding: 10px;
+    background-color: #a64c1e;
+    border: 1px solid #a64c1e;
+    border-radius: 10px;
+
+}
+input[type="email"]:focus,input[type="text"]:focus{
+    border: 2px solid #a64c1e !important;
+    outline: none;
+}
+textarea:focus{
+    border: 2px solid #a64c1e !important;
+    outline: none; 
+}
+/* End Contact us  */
+
+/* Start Footer  */
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 40px;
+}
+.footer a{
+    display: block;
+    text-decoration: none;
+color: #f2f2f2;}
+.footer hr{
+    width: 300%;
+}
+.footer_head{
+    background-color: #a64c1e;
+}
+.footer h3{
+    color: #FFF5E6;
+    margin-bottom: 10px;
+}
+.footer_hr{
+    width:300%;
+    height:1px;
+    background-color:gold;
+    border:none;}
+.footer_button{
+text-align: center;
+padding-bottom: 20px;
+font-size: 18px;}
+.footer a{
+padding-bottom: 10px;
+font-size:20px;
+}
+.footer p{
+color:#F5DEB3;
+font-size: 20px;
+margin-left: 130px;}
+
+.footer h2{
+    color:gold;
+margin-left: 90px;
+margin-bottom: 10px;
+font-family: one;}
+.footer span{
+color: #F5DEB3;
+font-size: 20px;
+display:block;
+padding-bottom: 10px;}
+
+.footer a:hover{
+    color: gold;
+}
+/* End Footer  */
