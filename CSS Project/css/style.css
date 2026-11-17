@@ -30,13 +30,33 @@ margin-left: 80px;
     margin-left: 80px;
     font-size: 20px;
 }
-.navbar a{
+.navbar a {
+    position: relative;
     font-family: one;
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
     color: #000;
+    padding-bottom: 5px;
+    
 }
+nav a span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #d77b91;
+    transition: width 0.3s ease;
+}
+nav a:hover span{
+    width: 100%;
+}
+nav a.active span{
+    width: 100%;
+    
+}
+nav a.active{color: #800020;}
 /* End nav  */
 
 /* Start bunner  */
@@ -51,8 +71,34 @@ margin-left: 80px;
     padding-top: 100px;
     color: #ffffff;
 }
+.bunner_text h1{
+    color: #800020;
+    font-weight: bold;
+    font-size: 80px;
+}
+.bunner_text h2{
+    color:#FF00FF;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 100px;
+}
+.bunner_text h3{
+    color: #800020;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.bunner_text a{
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    background-color: #800020;
+    border: 1px solid #800020;
+    border-radius: 25px;
+    padding: 15px;
+    margin-left: 120px;
 
-
+}
 /* End bunner  */
 
 /* Start products */
@@ -62,6 +108,12 @@ margin-left: 80px;
     text-align: center;
     margin-top: 40px;
     font-family: one;
+}
+.product_button{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    width: 65%;
+    margin: auto;
 }
 .product_hr{
     display: inline-block;
@@ -107,7 +159,7 @@ filter: brightness(50%);
     margin-left: 150px; 
 }
 .choose h1{
-    margin-top: 40px;
+    
     padding-top: 40px;
     margin-left: 100px;
     font-family: one;
@@ -160,7 +212,8 @@ filter: brightness(50%);
 .best{
     margin-top: 40px;
     /* font-family: one; */
-}
+     margin-bottom: 100px;
+} 
 .best h1{
     text-align: center;
     font-family: one;
@@ -177,13 +230,42 @@ filter: brightness(50%);
 width:200px;
 height:200px;
 border-radius:10px ;
-margin-left:10px ;
+
+}
+.seller_img1{
+width: 200px;
+height: 320px;
+background-color: #F5DEB3;
+border-radius: 10px; 
 }
 .sell_card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 90%;
-    margin: auto;
+   grid-template-columns: repeat(4,1fr);
+   width: 80%;
+    gap: 30px;
+    margin: auto; 
+    margin-top: 30px;
+    
+}
+.seller_img1 h3{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.seller_img1 span{
+    color:#FF00FF;
+    font-size: 20px;
+    margin-left:25px ;
+}
+.seller_img1 a{
+    text-decoration: none;
+    border:1px solid #800020 ;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #800020;
+    padding: 3px;
+    position: relative;
+    top: 20px;
+    left: 50px;
 }
 /* End Best selling  */
 
@@ -244,7 +326,7 @@ margin-left:10px ;
     border: 1px solid #d77b91;
     border-radius: 10px;
 }
-button{
+.button{
     color: #ffffff;
     width: 100px;
     padding: 10px;
@@ -264,7 +346,7 @@ textarea:focus{
 /* End Contact us  */
 
 /* Start Footer  */
-.footer{
+ .footer{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 20px;
@@ -300,20 +382,251 @@ font-size:20px;
 .footer p{
 color:#F5DEB3;
 font-size: 20px;
-margin-left: 130px;}
+margin-left: 100px;}
 
 .footer h2{
     color:gold;
 margin-left: 90px;
 margin-bottom: 10px;
 font-family: one;}
-.footer span{
+
+.footer_span{
+display: block;
 color: #F5DEB3;
 font-size: 20px;
-display:block;
-padding-bottom: 10px;}
+padding-bottom: 10px;
+}
 
 .footer a:hover{
     color: gold;
+} 
+/* End Footer   */
+
+/* Start Cakes Page  */
+.all_cake img{
+width: 220px;
+height: 190px;
+border-radius: 10px 10px 0px 0px;
 }
-/* End Footer  */
+.all_cake{
+    display: flex;
+    flex-direction: row;
+    background-color:palegreen;
+    height: 350px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.cake{
+    margin-left:30px;
+background-color: #ffffff;
+border-radius: 10px;
+height: 300px;}
+.all_cake button{
+    background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+
+    }
+
+.all_cake h1{
+    font-family: one;
+}
+.cake_span{
+    color:#FF1493;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    left: 60px;
+    top:5px;
+    }
+.all_cake h3{
+    text-align: center;
+}  
+.cake_head  h1{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.cake_head h4{
+    font-size: 20px;
+    margin-left: 50px;
+}
+/* End Cake  */
+/* Start For Children  */
+.all_child img{
+width: 220px;
+height: 190px;
+border-radius: 10px 10px 0px 0px;
+}
+.all_child{
+    display: flex;
+    flex-direction: row;
+    background-color:plum;
+    height: 350px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.child{
+    margin-left:30px;
+background-color: #ffffff;
+border-radius: 10px;
+height: 300px;}
+.all_child button{
+    background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+
+    }
+
+.all_child h1{
+    font-family: one;
+}
+
+.all_child h3{
+    text-align: center;
+}  
+.child_head  h1{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.child_head h4{
+    font-size: 20px;
+    margin-left: 50px;
+}
+/* End For Children  */
+/* Start Wedding  */
+.all_wedding img{
+width: 220px;
+height: 190px;
+border-radius: 10px 10px 0px 0px;
+}
+.all_wedding{
+    display: flex;
+    flex-direction: row;
+    background-color:palegoldenrod;
+    height: 350px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.wedding{
+    margin-left:30px;
+background-color: #ffffff;
+border-radius: 10px;
+height: 300px;}
+.all_wedding button{
+    background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+}
+
+
+.all_wedding h1{
+    font-family: one;
+}
+
+.all_wedding h3{
+    text-align: center;
+}  
+.wedding_head  h1{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.wedding_head h4{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+/* End For Wedding*/
+/* Start for boys  */
+
+.all_boy img{
+width: 220px;
+height: 190px;
+border-radius: 10px 10px 0px 0px;
+}
+.all_boy{
+    display: flex;
+    flex-direction: row;
+    background-color:skyblue;
+    height: 350px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.boy{
+    margin-left:30px;
+background-color: #ffffff;
+border-radius: 10px;
+height: 300px;}
+.all_boy button{
+    background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+}
+
+
+.all_boy h1{
+    font-family: one;
+}
+
+.all_boy h3{
+    text-align: center;
+}  
+.boy_head  h1{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.boy_head h4{
+    font-size: 20px;
+    margin-left: 50px;
+}
+/* End for boys */
+/* Start for girls */
+.all_girl img{
+width: 220px;
+height: 190px;
+border-radius: 10px 10px 0px 0px;
+}
+.all_girl{
+    display: flex;
+    flex-direction: row;
+    background-color:pink;
+    height: 350px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.all_girl button{
+    background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+}
+.cake_button{
+     background-color: #FF00FF;
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left:60px;
+    margin-top: 10px;
+}
+.all_girl h1{
+    font-family: one;
+}
+.all_girl h3{
+    text-align: center;
+}  
+/* End for girl  */
+/* End Caks Page  */
+ 
