@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Register</h1>
+    <form action="" name="myForm">
+        <label for="name" id="name">Name</label>
+        <input type="text" name="studentname" id="name"><br><br>
+
+        <label for="age">Age</label>
+        <input type="text" name="age" id="name"><br><br>
+
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address"><br><br>
+
+        <button type="button" onclick="register()">Register</button>
+    </form>
+    <h1>Student List</h1>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No,</th>
+                <th>Name,</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script>
+
+        let studentList=[];
+
+        function register(){
+            let name=document.myForm.name.value;
+            let age=document.myForm.age.value;
+            let address=document.myForm.address.value;
+            
+            console.log(name);
+            console.log(age);
+            
+            
+
+        }
+
+    </script>
+</body>
+</html>
